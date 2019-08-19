@@ -362,4 +362,7 @@ body {
     #modalImgDisplayLocation {
         height: 40vh;
     }
+    #mainJumbotron h1 {
+        font-size: 3rem;
+    }
 }
