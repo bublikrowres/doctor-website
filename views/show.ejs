@@ -1,0 +1,92 @@
+<% include partials/header %>
+
+<section class='mt-5' >
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-3 d-flex flex-column justify-content-center align-items-center' >
+                <img class='img-fluid boxShadow' src='https://drlupupaul.s3.eu-central-1.amazonaws.com/microscop.jpg'>
+                <h3 class='mt-5'>Echipament:</h3>
+                
+                <ul><%for(var i=0;i<data.gear.length; i++){%>
+                    <li><%=data.gear[i]%></li>
+                    <%};%>
+                </ul>
+            </div>
+            <div class='col-md-7'>
+                <div class='card'>
+                    <div class='card-body'>
+                        <h2 class='text-center'><%=data.title%></h2>
+                        <hr>
+                        <p ><%=data.description1%></p>
+                        <p><%=data.description2%></p>
+                        <p><%=data.description3%></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-5">
+                    <div class="row ">
+                        <div class='col-md-12 d-flex flex-row justify-content-center'>
+                            <div class=""><%for(var i=0;i<data.image.length; i++){%>
+                                <img class='imgGalery' src="<%=data.image[i]%>" alt="" title="" value='<%=data.image[i]%>' onclick=modalImgDisplay(this)>
+                                <%};%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='d-flex justify-content-around p-2 mt-3'>
+                <div class=''><a class='btn btn-info btn-sm' href='/casestudies'>Back</a></div>
+                <div class=''><a class='btn btn-success btn-sm' href='/casestudies/<%= data._id %>/comments/new'>Ask a question</a></div>
+            </div>
+            <div class='card p-0 footerSpace'>
+                <%data.comments.forEach((elem)=>{ %>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <strong class='ml-3'><%= elem.author%> : </strong>
+                        <p class='ml-5'><%= elem.text%></p>
+                        <p class='dateComment'><i><%=elem.created.toDateString()%></i></p>
+                        <hr>
+                    </div>
+                </div>
+                <% }); %>
+                
+            </div>
+            
+            <div class="modal fade modalGallery" tabindex="-1" role="dialog" aria-hidden="false">
+                <div class="modal-dialog modal-lg">
+                
+                    <div class="modal-content bg-light">
+                    
+                        <img id='modalImgDisplayLocation' class='img-fluid' src="" alt="" title="" >
+                        
+                        <div class='watermark' >
+                        <a href='' class='closeWindowX' onclick='closeWindow()'>X<a>
+                            <br>
+                                <p class='m-0 p-0'>uPaul.ro &ThickSpace; www.DrLupuPaul.ro &ThickSpace; www.D</p>
+                            
+                            <br>
+                            <p class='m-0 p-0'>uPaul.ro &ThickSpace; www.DrLupuPaul.ro &ThickSpace; www.D</p>
+                            <br>
+                            <br>
+                            <p class='m-0 p-0'>uPaul.ro &ThickSpace; www.DrLupuPaul.ro &ThickSpace; www.D</p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="modalGalleryPictureDIsplay" class="modal-content d-flex flex-row justify-content-center bg-transparent fixed-bottom">
+                    <div class="row">
+                        <div class='col-md-12'>
+                            <div class=""><%for(var i=0;i<data.image.length; i++){%>
+                            <img class='imgGaleryModal' src="<%=data.image[i]%>" alt="" title="" onclick=modalImgDisplay(this)>
+                            <%};%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+<section>
+<% include partials/footer %>

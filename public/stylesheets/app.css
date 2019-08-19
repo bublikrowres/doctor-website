@@ -1,0 +1,360 @@
+body {
+    background-color: #def2f1;
+    font-family: 'Slabo';
+    color: #17252a;
+}
+
+.boxShadow {
+    background-color: white;
+    border: 1px transparent grey;
+    box-shadow: 15px 10px 10px #254e58;
+}
+
+#mainJumbotron {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    color: black;
+    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/mainCover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5rem;
+}
+
+#mainJumbotron h1,
+#mainJumbotron p {
+    background-color: white;
+    color: #17252a;
+    border-radius: 1%;
+    opacity: 0.8;
+    font-weight: 500;
+    padding: 3px;
+}
+
+#jumbotronContact {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: black;
+    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/Dental-Chair-1024x682.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#mainNabvar a {
+    font-size: 1.5rem;
+}
+
+#mainNabvar .navbar-brand {
+    font-size: 2rem;
+}
+
+#langingPageStories {
+    margin-top: 60vh;
+}
+
+.firstLetterBig::first-letter {
+    margin-left: 15px;
+    font-size: 2.5rem;
+}
+
+#photoDemoText {
+    border: 1px transparent;
+    border-radius: 50%;
+}
+
+.imgGalery {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+}
+
+.dateComment {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.modal {
+    background-color: #17252ad2;
+}
+
+#caseStudyLower a {
+    text-decoration: none;
+    color: black;
+}
+
+.imgGaleryModal {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.imgGaleryModal:hover {
+    opacity: 1;
+}
+
+.closeWindowX {
+    position: absolute;
+    right: 1%;
+    top: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.closeWindowX:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.watermark {
+    opacity: 0.15;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 3rem;
+    background: transparent;
+}
+
+.textFooter {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9rem;
+    background-color: #17252a;
+    opacity: 0.9;
+    color: #feffff;
+    padding-bottom: 10px;
+}
+
+.textFooter .fas,
+.textFooter .fab {
+    font-size: 1.5rem;
+    color: #feffff;
+}
+
+.textFooter a {
+    text-decoration: none;
+    color: #feffff;
+}
+
+.textFooter a:hover {
+    text-decoration: none;
+}
+
+.footerSpace {
+    margin-bottom: 15%;
+}
+
+.btn-info {
+    background-color: #2b7a78;
+}
+
+.btn-info:hover {
+    background-color: #3aafa9;
+}
+
+.btn-success {
+    background-color: rgb(41, 145, 84);
+}
+
+.btn-success:hover {
+    background-color: rgba(41, 145, 84, 0.7);
+}
+
+#langingPageStories hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    /* old IE */
+    background-color: #333;
+    /* Modern Browsers */
+    width: 50%;
+}
+
+#iframeEndo {
+    margin-top: 1rem;
+    border: 2px solid rgb(207, 201, 201);
+}
+
+#endodonticsArticles {
+    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/backgroudnPatternEndo.gif');
+    height: 100%;
+}
+
+#articlesAboutEndo a {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    padding: 10px;
+    box-shadow: 10px 5px 8px darkgrey;
+}
+
+#articlesAboutEndo a:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+#endodonticsArticles h1 {
+    color: rgb(214, 207, 208);
+}
+
+#aboutMeSection a {
+    font-size: 4rem;
+    color: rgb(41, 132, 145);
+}
+
+#collaboratorsLinks a {
+    color: rgb(41, 132, 145);
+}
+
+#homepage1 {
+    border-radius: 15%;
+}
+
+#homepage1 li {
+    list-style-type: square;
+}
+
+#homepage1 a {
+    text-decoration: none;
+}
+
+#homepage2 {
+    border-radius: 10%;
+}
+
+.icons {
+    padding: 10px;
+    border: 1px transparent rgb(196, 196, 196);
+    border-radius: 50%;
+}
+
+.icons:hover {
+    background-color: rgb(219, 255, 255);
+}
+
+#backgroundCaseStudyPage {
+    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/endodonticTopImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#imageBackgroundAboutMe {
+    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/case2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#backgroundImgComment {
+    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/commentImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#backgroundImgComment h1 {
+    background-color: #17252a;
+    opacity: 0.8;
+    color: #feffff;
+}
+
+#contactPage i {
+    font-size: 1.2rem;
+}
+
+#contactPage li {
+    font-size: 1.5rem;
+    list-style: square;
+}
+
+#contactPage li:hover {
+    transform: scale(1.5);
+    margin-left: 15%;
+}
+
+#contactPage i:hover {
+    transform: scale(1.5);
+}
+
+#contactPage a {
+    color: black;
+    text-decoration: none;
+}
+
+#contactPage p,
+#contactPage a {
+    font-weight: 400;
+}
+
+#contactPage hr {
+    width: 50%;
+    border: none;
+    height: 3px;
+    color: rgb(138, 137, 137);
+    background-color: rgb(138, 137, 137);
+}
+
+.imgContact {
+    border: 2px solid #17252a;
+    opacity: 0.8;
+}
+
+.imgContact:hover {
+    opacity: 1;
+    transform: scale(1.05)
+}
+
+#infoContact {
+    height: 80vh;
+}
+
+#infoContact:hover {
+    background-color: #88bdbc;
+    opacity: 0.9;
+}
+
+#hamburgerIcon {
+    font-size: 2rem;
+}
+
+
+/* mobile adjusting homepage css */
+
+.niceForm {
+    width: 30%;
+}
+
+.card {
+    background-color: #feffff;
+}
+
+.navbarColor {
+    background-color: #112d34!important;
+    /* background-image: linear-gradient(to right, #e7717d, yellow); */
+}
+
+@media only screen and (max-width: 767px) {
+    .niceForm {
+        width: 100%;
+    }
+    #flexFooter {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+}
