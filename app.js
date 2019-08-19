@@ -7,7 +7,14 @@ const express = require('express'),
 
 
 
-mongoose.connect('mongodb+srv://lupupaul:qwertyuiop@cluster0-7zpxz.mongodb.net/PaulsDB', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://lupupaul:qwertyuiop@cluster0-7zpxz.mongodb.net/PaulsDB', {
+    useNewUrlParser: true,
+    useCreateIndex: true
+}).then(() => {
+    console.log('connected to DB!!')
+}).catch(err => {
+    console.log('ERROR: ----', err.message);
+});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
