@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
 
-// seedDB(); // seeds database with cases
 
 //INDEX route
 app.get('/', (req, res) => {
