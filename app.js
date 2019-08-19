@@ -100,6 +100,6 @@ app.post('/casestudies/:id', (req, res) => {
 });
 
 //local listen
-app.listen(3000, () => console.log(`Example app listening on port ${3000}!`))
-    //deply listen
-    // app.listen(process.env.PORT, process.env.IP);
+// app.listen(3000, () => console.log(`Example app listening on port ${3000}!`))
+//deply listen
+app.listen(process.env.PORT, process.env.IP);
