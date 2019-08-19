@@ -3,8 +3,7 @@ const express = require('express'),
     mongoose = require('mongoose'),
     Case = require('./models/casestudy'),
     Comment = require('./models/comment'),
-    bodyParser = require("body-parser"),
-    seedDB = require('./seeds');
+    bodyParser = require("body-parser");
 
 
 
