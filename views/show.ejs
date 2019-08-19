@@ -54,17 +54,13 @@
             </div>
             
             <div class="modal fade modalGallery" tabindex="-1" role="dialog" aria-hidden="false">
-                <div class="modal-dialog modal-lg">
-                
+                <div class="modal-dialog modal-lg my-5">
                     <div class="modal-content bg-light">
-                    
                         <img id='modalImgDisplayLocation' class='img-fluid' src="" alt="" title="" >
-                        
                         <div class='watermark' >
-                        <a href='' class='closeWindowX' onclick='closeWindow()'>X<a>
+                            <a href='' class='closeWindowX' onclick='closeWindow()'>X<a>
                             <br>
-                                <p class='m-0 p-0'>uPaul.ro &ThickSpace; www.DrLupuPaul.ro &ThickSpace; www.D</p>
-                            
+                            <p class='m-0 p-0'>uPaul.ro &ThickSpace; www.DrLupuPaul.ro &ThickSpace; www.D</p>
                             <br>
                             <p class='m-0 p-0'>uPaul.ro &ThickSpace; www.DrLupuPaul.ro &ThickSpace; www.D</p>
                             <br>
@@ -75,11 +71,10 @@
                         </div>
                     </div>
                 </div>
-            
-                <div id="modalGalleryPictureDIsplay" class="modal-content d-flex flex-row justify-content-center bg-transparent fixed-bottom">
+                <div id="modalGalleryPictureDIsplay" class="modal-content bg-transparent">
                     <div class="row">
-                        <div class='col-md-12'>
-                            <div class=""><%for(var i=0;i<data.image.length; i++){%>
+                        <div class='col-md-12 d-xl-flex justify-content-center'>
+                            <%for(var i=0;i<data.image.length; i++){%>
                             <img class='imgGaleryModal' src="<%=data.image[i]%>" alt="" title="" onclick=modalImgDisplay(this)>
                             <%};%>
                         </div>

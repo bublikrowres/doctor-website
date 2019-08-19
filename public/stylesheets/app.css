@@ -312,6 +312,7 @@ body {
 .imgContact {
     border: 2px solid #17252a;
     opacity: 0.8;
+    width: 50%;
 }
 
 .imgContact:hover {
@@ -332,8 +333,9 @@ body {
     font-size: 2rem;
 }
 
-
-/* mobile adjusting homepage css */
+#modalImgDisplayLocation {
+    height: 70vh;
+}
 
 .niceForm {
     width: 30%;
@@ -356,5 +358,8 @@ body {
         display: flex;
         flex-flow: column;
         text-align: center;
+    }
+    #modalImgDisplayLocation {
+        height: 40vh;
     }
 }
