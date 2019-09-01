@@ -3,7 +3,10 @@ const express = require('express'),
     mongoose = require('mongoose'),
     Case = require('./models/casestudy'),
     Comment = require('./models/comment'),
-    bodyParser = require("body-parser");
+    bodyParser = require("body-parser"),
+    nStatic = require('node-static'),
+    http = require('http');
+
 
 
 
@@ -19,6 +22,11 @@ mongoose.connect('mongodb+srv://lupupaul:qwertyuiop@cluster0-7zpxz.mongodb.net/P
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
+//create server to serve assets
+const fileServer = new nStatic.Server('./public/assets');
+http.createServer((req, res) => {
+    fileServer.serve(req, res);
+});
 
 
 //INDEX route

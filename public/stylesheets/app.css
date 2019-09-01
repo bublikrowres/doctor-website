@@ -15,7 +15,7 @@ body {
     height: 70vh;
     position: absolute;
     color: black;
-    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/mainCover.jpg');
+    background-image: url('/assets/mainCover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@ body {
     height: 100%;
     position: absolute;
     color: black;
-    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/Dental-Chair-1024x682.jpg');
+    background-image: url('/assets/Dental-Chair-1024x682.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -187,7 +187,7 @@ body {
 }
 
 #endodonticsArticles {
-    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/backgroudnPatternEndo.gif');
+    background-image: url('/assets/backgroudnPatternEndo.gif');
     height: 100%;
 }
 
@@ -247,21 +247,21 @@ body {
 }
 
 #backgroundCaseStudyPage {
-    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/endodonticTopImg.jpg');
+    background-image: url('/assets/endodonticTopImg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #imageBackgroundAboutMe {
-    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/case2.jpg');
+    background-image: url('/assets/coverAboutMe.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #backgroundImgComment {
-    background-image: url('https://drlupupaul.s3.eu-central-1.amazonaws.com/commentImg.jpg');
+    background-image: url('/assets/commentImg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
