@@ -6,6 +6,7 @@ Created with:
   - Javascript
   - Node.js
     -express
+    -ejs
     -mongoose
     -body-parser
     -node-static
